@@ -1,0 +1,206 @@
+{
+  "ensureAuthenticated": true,
+  "modelAccessControl": [
+    {
+      "rol": "master",
+      "permission": [
+        {
+          "model": "bank_data",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "country",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "mipyme",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "document",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "log",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "person",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "role",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "roleperson",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "roleserverfunction",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "serverfunction",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "state",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "city",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        }
+      ]
+    },
+    {
+      "rol": "admin",
+      "permission": [
+        {
+          "model": "bank_data",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "country",
+          "read": 1
+        },
+        {
+          "model": "mipyme",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "document",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "log",
+          "read": 1
+        },
+        {
+          "model": "person",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "role",
+          "read": 1
+        },
+        {
+          "model": "roleperson",
+          "read": 1,
+          "create": 1,
+          "update": 1,
+          "delete": 1
+        },
+        {
+          "model": "roleserverfunction",
+          "read": 1
+        },
+        {
+          "model": "serverfunction",
+          "read": 1
+        },
+        {
+          "model": "state",
+          "read": 1
+        },
+        {
+          "model": "city",
+          "read": 1
+        }
+      ]
+    },
+    {
+      "rol": "tcp",
+      "permission": [
+        {
+          "model": "bank_data",
+          "read": 0,
+          "create": 0,
+          "update": 0,
+          "delete": 0
+        },
+        {
+          "model": "country",
+          "read": 1
+        },
+        {
+          "model": "mipyme",
+          "read": 0,
+          "create": 0,
+          "update": 0,
+          "delete": 0
+        },
+        {
+          "model": "document",
+          "read": 0,
+          "create": 0,
+          "update": 0,
+          "delete": 0
+        },
+        {
+          "model": "person",
+          "read": 0,
+          "update": 0,
+          "delete": 0
+        },
+        {
+          "model": "state",
+          "read": 1
+        },
+        {
+          "model": "city",
+          "read": 1
+        }
+      ]
+    }
+  ]
+}

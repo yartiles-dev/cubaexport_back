@@ -1,0 +1,117 @@
+{
+  "api": {
+    "useHttps": false,
+    "prefix": "/v1",
+    "port": 6541,
+    "host": [
+      "10.165.9.136",
+      "172.17.240.1",
+      "10.1.19.2",
+      "192.168.49.174",
+      "127.0.0.1"
+    ],
+    "fileLimit": "420000kb"
+  },
+  "nameFolderModule": "cuba_export",
+  "database": {
+    "activeDialect": "postgres",
+    "dialects": {
+      "sqlite": {
+        "storage": "db.production.sqlite"
+      },
+      "postgres": {
+        "host": "10.25.1.102",
+        "database": "cuba_export",
+        "username": "postgres",
+        "password": "Dash*19eti",
+        "define": {
+          "charset": "utf8",
+          "dialectOptions": {
+            "collate": "utf8_unicode_ci"
+          }
+        },
+        "dialectOptions": {
+          "useUTC": false,
+          "timezone": "-05:00"
+        },
+        "timezone": "-05:00"
+      },
+      "mysql": {
+        "host": "localhost",
+        "database": "cuba_export",
+        "username": "root",
+        "password": "admin",
+        "define": {
+          "charset": "utf8",
+          "dialectOptions": {
+            "collate": "utf8_unicode_ci"
+          }
+        },
+        "dialectOptions": {
+          "useUTC": false,
+          "timezone": "-05:00"
+        },
+        "timezone": "-05:00"
+      }
+    },
+    "defaultOptions": {
+      "logging": false,
+      "sync": {
+        "force": false
+      }
+    }
+  },
+  "mailer": {
+    "enabled": true,
+    "sendMail": false,
+    "activeService": "gmail",
+    "from": "cuba.export.eti@gmail.com<cuba.export.eti@gmail.com>",
+    "services": {
+      "gmail": {
+        "service": "gmail",
+        "auth": {
+          "user": "cuba.export.eti@gmail.com",
+          "pass": "CubaExport*Eti*2802118@"
+        }
+      },
+      "smtp_eti": {
+        "service": "eti.biocubafarma",
+        "host": "correo.eti.biocubafarma.cu",
+        "secure": false,
+        "port": 25,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "comedics@eti.biocubafarma.cu",
+          "pass": "Thaba.14"
+        }
+      }
+    }
+  },
+  "utils": {
+    "logger": {
+      "enabled": true,
+      "colorize": true,
+      "timestamp": false
+    }
+  },
+  "developers": {
+    "sendNotifications": true,
+    "mails": [
+      "yartiles.dev@gmail.com",
+      "orgielce@gmail.com"
+    ]
+  },
+  "jwt": {
+    "secret": "281462ba-b4fe-41ae-b9dc-6ac40eac196c",
+    "options": {
+      "algorithm": "HS256",
+      "issuer": "Cuba Export Authentication",
+      "audience": "https://cubaexport.cu",
+      "subject": "cubaexport"
+    }
+  },
+  "env": "production",
+  "TZ": "Cuba"
+}

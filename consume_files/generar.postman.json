@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "d0910a13-7b5d-4502-a7ca-0ba63eda9002",
+		"name": "generar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "generar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ensureAuthenticated\": true,\r\n  \"modelAccessControl\": [\r\n    {\r\n      \"rol\": \"master\",\r\n      \"permission\": [\r\n        {\r\n          \"model\": \"bank_data\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"country\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"mipyme\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"document\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"log\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"person\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"role\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"roleperson\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"roleserverfunction\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"serverfunction\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"state\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"city\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"rol\": \"admin\",\r\n      \"permission\": [\r\n       {\r\n          \"model\": \"bank_data\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"country\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"mipyme\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"document\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"log\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"person\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"role\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"roleperson\",\r\n          \"read\": 1,\r\n          \"create\": 1,\r\n          \"update\": 1,\r\n          \"delete\": 1\r\n        },\r\n        {\r\n          \"model\": \"roleserverfunction\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"serverfunction\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"state\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"city\",\r\n          \"read\": 1\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"rol\": \"tcp\",\r\n      \"permission\": [\r\n        {\r\n          \"model\": \"bank_data\",\r\n          \"read\": 0,\r\n          \"create\": 0,\r\n          \"update\": 0,\r\n          \"delete\": 0\r\n        },\r\n        {\r\n          \"model\": \"country\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"mipyme\",\r\n          \"read\": 0,\r\n          \"create\": 0,\r\n          \"update\": 0,\r\n          \"delete\": 0\r\n        },\r\n        {\r\n          \"model\": \"document\",\r\n          \"read\": 0,\r\n          \"create\": 0,\r\n          \"update\": 0,\r\n          \"delete\": 0\r\n        },\r\n        {\r\n          \"model\": \"person\",\r\n          \"read\": 0,\r\n          \"update\": 0,\r\n          \"delete\": 0\r\n        },\r\n        {\r\n          \"model\": \"state\",\r\n          \"read\": 1\r\n        },\r\n        {\r\n          \"model\": \"city\",\r\n          \"read\": 1\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/generate",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertar Datos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/createDataTest",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"createDataTest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar seeders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/consume_data",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"consume_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar Json Postman",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/generated_json_postman",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"generated_json_postman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar migration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/create_migration",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"create_migration"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:6541/v1"
+		}
+	]
+}

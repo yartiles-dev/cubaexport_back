@@ -1,0 +1,18 @@
+{
+	"relations":["person"],
+	"attributos":{
+		"LocalsAttributes":["id","bank_account_type","bank_name","office","direction","personId","mipyme_id","description","createdAt","updatedAt","deletedAt"],
+		"person":["id","username"]
+	},
+	"attr":{
+		"person":{
+			"username":"arletis"
+		}
+	},
+	"orderBy":{
+		"mode":"ASC",
+		"attr":"person.username"
+	},
+	"pagination":2,
+	"currentPage":2
+}
