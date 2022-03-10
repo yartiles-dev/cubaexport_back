@@ -22,10 +22,10 @@
       },
       "postgres": {
         "ssl": true,
-        "host": "ec2-18-210-191-5.compute-1.amazonaws.com",
-        "database": "d2tvkbea9ma499",
-        "username": "zbdnebcsufhlwu",
-        "password": "d121265392eec15e44aafe234402a0be4d22fb75f874bfb6ac12a299cb86daf5",
+        "host": "ec2-3-212-45-192.compute-1.amazonaws.com",
+        "database": "d9p57slv4tmdfo",
+        "username": "cwlhtsggzmcceb",
+        "password": "e10e0ac944bc6e36aed0da03cf4007a788371f1b08282ce65f3454edbe2dceeb",
         "define": {
           "charset": "utf8",
           "dialectOptions": {
